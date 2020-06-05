@@ -1,4 +1,6 @@
 #!/usr/bin/python
+# -* coding: utf-8 -*-
+
 """ Webotron: Deploy websites with aws.
 
 Webotron automates the process of deploying static websites.
@@ -53,7 +55,6 @@ def list_bucket_objects(bucket):
 def setup_bucket(bucket):
     """Create and configure S3 Bucket."""
     s3_bucket = bucket_manager.init_bucket(bucket)
-
     bucket_manager.set_policy(s3_bucket)
     bucket_manager.configure_website(s3_bucket)
 
