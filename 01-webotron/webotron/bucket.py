@@ -8,7 +8,7 @@ import boto3
 from botocore.exceptions import ClientError
 from hashlib import md5
 from functools import reduce
-import util
+from webotron import util
 
 class BucketManager:
     """Manage an S3 Bucket."""
